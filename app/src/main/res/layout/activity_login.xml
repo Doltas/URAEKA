@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.company.craefe20.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_above="@+id/signin_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="100dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/uraeka_logo_title" />
+
+    <FrameLayout
+        android:id="@+id/signin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="225dp"
+        android:orientation="vertical"/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:translationY="290dp"
+        android:text="이메일로 로그인 하기" />
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:translationY="350dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:translationY="390dp"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/email_login_button"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/signin_email"
+        android:theme="@style/ButtonStyle"
+        android:translationY="440dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:text ="SNS계정으로 로그인 하기"
+        android:translationY="490dp" />
+
+
+
+    <Button
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="140dp"
+        android:background="@drawable/btn_signin_google_o"
+        android:textColor="@color/colorWhite"
+        android:translationY="510dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="210dp"
+        android:translationY="510dp"
+        android:background="@drawable/btn_signin_facebook_o"
+        android:textColor="@color/colorWhite" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:text="아직 계정이 없으신가요?"
+        android:translationY="565dp"
+        android:layout_marginRight="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:text="가입하기"
+        android:translationY="565dp"
+        android:textColor="#0054FF"
+        android:id="@+id/register_btn"
+        />
+
+
+</RelativeLayout>
